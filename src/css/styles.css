@@ -23,3 +23,102 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+.gallery-item {
+  position: relative;
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #808080;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img {
+  width: 360px;
+  height: 200px;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-section {
+  position: absolute;
+  bottom: 0;
+  width: 360px;
+  height: 48px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font: 600 12px / 1.33333 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.value {
+  font: 400 12px / 2 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  width: 371px;
+  margin: 36px auto;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  height: 40px;
+  flex-grow: 1;
+  font-size: 18px;
+  padding-left: 15px;
+  border: 1px solid #808080;
+  font: 400 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.search-btn,
+.load-more {
+  width: 91px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+  transition: background-color 250ms linear;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #6c8cff;
+}
+.is-hidden {
+  display: none;
+}
+.load-more {
+  display: block;
+  margin: 32px auto;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
