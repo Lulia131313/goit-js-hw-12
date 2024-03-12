@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
+    
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-527658dd.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-cf6910df.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-6cc0bf7b.css">
   </head>
   <body>
-    ENOENT: no such file or directory, open '/home/runner/work/goit-js-hw-12/goit-js-hw-12/src/partials/header.html'
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/goit-js-hw-12/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    ENOENT: no such file or directory, open '/home/runner/work/goit-js-hw-12/goit-js-hw-12/src/partials/vite-promo.html'
-
+    <div class="container">
+      <form class="search-form js-search-form">
+        <input
+          type="text"
+          name="user-search-query"
+          class="search-input"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      <ul class="gallery js-gallery list"></ul>
+      <button type="button" class="load-more js-load-more is-hidden">
+        Load more
+      </button>
+      <div class="loader is-hidden"></div>
+    </div>
     
   </body>
 </html>
